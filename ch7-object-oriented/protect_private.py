@@ -26,5 +26,8 @@ someone = People(name='Jack', age=20)
 # print(someone._protect_var)
 
 someone._protect_var = 30
+#dir method can't print all the details for current instances, and python will rename
+# all private property which  starts with __ to something else(insert the class name before the original property names)
+print(dir(someone))
 print(someone._People__private_var)
 someone.get_var()

@@ -24,7 +24,8 @@ class People:
 
 # class instance 类的实例
 
-someone = People(name='Jack', age=20)
+#someone = People(name='Jack', age=20)
+someone = People('Jack', 20)
 print(someone.name)
 print(someone.age)
 someone.sayhi()
